@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\source\\repos\\WebProgramlamaProje\\WebProgramlamaProje.csproj": {}
+    "C:\\Users\\Dell\\Documents\\GitHub\\WebProgramlamaProjeOdevi\\WebProgramlamaProje2\\WebProgramlamaProje.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\source\\repos\\WebProgramlamaProje\\WebProgramlamaProje.csproj": {
+    "C:\\Users\\Dell\\Documents\\GitHub\\WebProgramlamaProjeOdevi\\WebProgramlamaProje2\\WebProgramlamaProje.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\WebProgramlamaProje\\WebProgramlamaProje.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Documents\\GitHub\\WebProgramlamaProjeOdevi\\WebProgramlamaProje2\\WebProgramlamaProje.csproj",
         "projectName": "WebProgramlamaProje",
-        "projectPath": "C:\\Users\\Dell\\source\\repos\\WebProgramlamaProje\\WebProgramlamaProje.csproj",
+        "projectPath": "C:\\Users\\Dell\\Documents\\GitHub\\WebProgramlamaProjeOdevi\\WebProgramlamaProje2\\WebProgramlamaProje.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\source\\repos\\WebProgramlamaProje\\obj\\",
+        "outputPath": "C:\\Users\\Dell\\Documents\\GitHub\\WebProgramlamaProjeOdevi\\WebProgramlamaProje2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,30 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -70,7 +70,20 @@ namespace WebProgramlamaProje.Areas.Identity.Pages.Account
         ///     directly from your code. This API may change or be removed in future releases.
         /// </summary>
         public class InputModel
-        {
+        {   
+            
+            [Required]
+            [StringLength(255, ErrorMessage = "The Firstname field should have a maximum of 255 characters ") ]  
+            [Display(Name ="Firstname")]
+            public string Firstname { get; set; }   
+
+
+            [Required]
+            [StringLength(255, ErrorMessage = "The Lastname field should have a maximum of 255 characters ")]
+            [Display(Name = "Lasttname")]
+            public string Lastname { get; set; }
+             
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -113,7 +126,12 @@ namespace WebProgramlamaProje.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
+
                 var user = CreateUser();
+
+                user.FirstName = Input.Firstname;
+                user.LastName = Input.Lastname; 
+
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);

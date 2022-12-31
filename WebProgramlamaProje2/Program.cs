@@ -7,7 +7,7 @@ var connectionString = builder.Configuration.GetConnectionString("WebProjeDBCont
 builder.Services.AddDbContext<WebProjeDBContext>(options =>
     options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<WebProgramlamaProjeUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<WebProgramlamaProjeUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<WebProjeDBContext>();
 
 // Add services to the container.
